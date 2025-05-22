@@ -1034,6 +1034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053067321}
   - component: {fileID: 1053067322}
+  - component: {fileID: 1053067323}
   m_Layer: 5
   m_Name: Conditions
   m_TagString: Untagged
@@ -1088,6 +1089,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1053067323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053067320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e9b0e7034a5b2438eeea457d2001f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1141468604}
+  stamina: {fileID: 1838824146}
 --- !u!1 &1141468600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,6 +1114,7 @@ GameObject:
   - component: {fileID: 1141468601}
   - component: {fileID: 1141468603}
   - component: {fileID: 1141468602}
+  - component: {fileID: 1141468604}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -1165,6 +1181,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141468600}
   m_CullTransparentMesh: 1
+--- !u!114 &1141468604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141468600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007764d591b7764c94f6f1369f474ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curValue: 0
+  startValue: 100
+  maxValue: 100
+  passiveValue: 1
+  uiBar: {fileID: 634849958}
 --- !u!1 &1567032755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,6 +1386,7 @@ GameObject:
   - component: {fileID: 1838824143}
   - component: {fileID: 1838824145}
   - component: {fileID: 1838824144}
+  - component: {fileID: 1838824146}
   m_Layer: 5
   m_Name: Stamina
   m_TagString: Untagged
@@ -1419,6 +1453,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838824142}
   m_CullTransparentMesh: 1
+--- !u!114 &1838824146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838824142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d007764d591b7764c94f6f1369f474ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curValue: 0
+  startValue: 100
+  maxValue: 100
+  passiveValue: 5
+  uiBar: {fileID: 10248763}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
