@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1566035514706891616}
   - component: {fileID: 692060920166649480}
   - component: {fileID: 3850014230730875221}
+  - component: {fileID: 5007687532435191351}
   m_Layer: 0
   m_Name: Item_SpeedUpPotion
   m_TagString: Untagged
@@ -109,6 +110,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5007687532435191351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029201063112072666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a911f1ba1bebae54ab7dee9fc064af00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 0070fb96eeee64e4b9beab66d49675a5, type: 2}
 --- !u!1001 &2620363699451738902
 PrefabInstance:
   m_ObjectHideFlags: 0
