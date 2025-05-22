@@ -21,6 +21,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 mouseDelta;
     public bool canLook = true;
 
+    [Header("Item")]
+    public bool allowDoubleJump = false;
+    public bool isInvincible = false;
+    private int jumpCount = 0;
+    private int maxJump = 1;
+
     public Action inventory;
     private Rigidbody _rigidbody;
 
@@ -33,6 +39,18 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update()
+    {
+        maxJump = allowDoubleJump ? 2 : 1;
+
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount < maxJump)
+        {
+            jumpCount++;
+        }
+
+        // 착지 시 jumpCount 리셋 필요
     }
 
     // Update is called once per frame
@@ -111,21 +129,5 @@ public class PlayerController : MonoBehaviour
         }
 
         return false;
-    }
-
-    public void OnInventory(InputAction.CallbackContext context)
-    {
-        if (context.phase == InputActionPhase.Started)
-        {
-            inventory?.Invoke();
-            ToggleCursor();
-        }
-    }
-
-    void ToggleCursor()
-    {
-        bool toggle = Cursor.lockState == CursorLockMode.Locked;
-        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
-        canLook = !toggle;
     }
 }
