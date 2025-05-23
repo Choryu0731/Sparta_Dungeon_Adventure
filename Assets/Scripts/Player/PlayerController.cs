@@ -130,4 +130,20 @@ public class PlayerController : MonoBehaviour
 
         return false;
     }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            transform.parent = other.transform;
+        }
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            transform.parent = null;
+        }
+    }
 }
