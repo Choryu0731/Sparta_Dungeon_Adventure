@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6113019238870096442}
   - component: {fileID: 8792036104654017505}
   - component: {fileID: 2964677907847766375}
-  m_Layer: 0
+  - component: {fileID: -6327029559617655517}
+  m_Layer: 7
   m_Name: Item_Invincible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +124,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: aba852db9748e0042bcf1cca67f8dc3f, type: 2}
+--- !u!114 &-6327029559617655517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406511942782850330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b20fa0b7bc295469d468ea3f3cc12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: aba852db9748e0042bcf1cca67f8dc3f, type: 2}
 --- !u!1001 &2105420726161474268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +188,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e9820a790af8497409d7cab84e2403b4, type: 3}
       propertyPath: m_Name
       value: Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e9820a790af8497409d7cab84e2403b4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

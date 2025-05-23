@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 692060920166649480}
   - component: {fileID: 3850014230730875221}
   - component: {fileID: 5007687532435191351}
-  m_Layer: 0
+  - component: {fileID: -2942135859938468852}
+  m_Layer: 7
   m_Name: Item_SpeedUpPotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +124,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 0070fb96eeee64e4b9beab66d49675a5, type: 2}
+--- !u!114 &-2942135859938468852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9029201063112072666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b20fa0b7bc295469d468ea3f3cc12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 0070fb96eeee64e4b9beab66d49675a5, type: 2}
 --- !u!1001 &2620363699451738902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +188,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 85c36c7b89cce1e48bfb44ae5c1fdc84, type: 3}
       propertyPath: m_Name
       value: BluePotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85c36c7b89cce1e48bfb44ae5c1fdc84, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
